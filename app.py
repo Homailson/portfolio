@@ -33,7 +33,7 @@ def create_app():
                         recipients=[os.environ.get("EMAIL")]
                         )
 
-            msg.body=f"Mensagem de: {nome}\n{mensagem}"
+            msg.body=f"Mensagem de: {email}\n{mensagem}\n{nome}"
 
             mail.send(msg)       
 
