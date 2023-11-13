@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Homailson</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar__image">
+            <img src="./static/img/profile_picture.png" alt="Foto de Homailson">
+        </div>
+        <div class="navbar__info">
+            <h1>Homailson</h1>
+            <p>Aberto a trabalho</p>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+        <ul class="nav__hidden" id="nav__list">
+            <li><a class="navbar__item" href="#section__home" onclick="toggleMenu()">Home</a></li>
+            <li><a class="navbar__item" href="#section__about" onclick="toggleMenu()">Sobre mim</a></li>
+            <li><a class="navbar__item" href="#section__portfolio" onclick="toggleMenu()">Portfólio</a></li>
+            <li><a class="navbar__item" href="#section__contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="home">
+            <div class="home__img">
+                <img src="./static/img/home_picture.png" alt="Foto de Homailson">
+            </div>
+            <section class="section" id="section__home">
+                <div class="main__title">
+                    <h2>Homailson Lopes</h2>
+                    <p class="home__text">
+                        <span class="home__text__fix">Sou </span>
+                        <span class="home__text__words" id="word"></span>
+                        <span class="home__text__cursor" id="cursor"></span>
+                    </p>
+                </div>
+                <article>
+
+                </article>
+                <footer>
+                    <a href="#section__about">
+                        <img src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                    </a>
+                </footer>
+            </section>
+        </div>
+
+        <div class="about">
+            <section class="section" id="section__about">
+                <div class="main__title">
+                    <h2>Sobre mim</h2>
+                </div>
+                <article>
+                    <div class="about__img">
+                        <img src="./static/img/about_picture.jpg" alt="Foto de Homailson">
+                    </div>
+                    <div class="about__txt">
+                        <h1>Quem sou eu?</h1>
+                        <p>Resido em Lorena, estado de São Paulo. Atuo, em
+                            regime parcial, como professor de Matemática nos anos finais do ensino básico.
+                            Sou aluno do 6º período do curso de Ciências de Dados, pela UNINTER.
+                            Em setembro de 2023, concluí, com sucesso, estágio pela UOL Compass,
+                            onde conquistei a certificação AWS Cloud Practitioner. Tenho me aprofundando
+                            na área de dados e estou iniciando projetos para desenvolvimento pessoal e
+                            profissional.
+                            <a class="curriculo"
+                                href="https://drive.google.com/file/d/1m63R3iDqKu20-hIf7nJ7DU-jOEw3uqUH/view?usp=sharing"
+                                target="_blank">Acesse meu currículo aqui
+                            </a>
+                        </p>
+                    </div>
+                </article>
+                <footer>
+                    <a href="#section__portfolio">
+                        <img src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                    </a>
+                </footer>
+            </section>
+        </div>
+
+        <div class="portfolio">
+            <section class="section" id="section__portfolio">
+                <div class="main__title">
+                    <h2>Portfólio</h2>
+                </div>
+                <article>
+                    <div class="images">
+                        <figure>
+                            <img src="./static/img/portfolio1_image.jpg" alt="Foto Portfolio 1">
+                            <div class="images__text">
+                                <p> Projeto 1</p>
+                                <a href="">More info</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./static/img/portfolio2_image.jpg" alt="Foto Portfolio 2">
+                            <div class="images__text">
+                                <p> Projeto 2</p>
+                                <a href="">More info</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./static/img/portfolio3_image.jpg" alt="Foto Portfolio 3">
+                            <div class="images__text">
+                                <p> Projeto 3</p>
+                                <a href="">More info</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./static/img/portfolio4_image.jpg" alt="Foto Portfolio 4">
+                            <div class="images__text">
+                                <p> Projeto 4</p>
+                                <a href="">More info</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./static/img/portfolio5_image.jpg" alt="Foto Portfolio 5">
+                            <div class="images__text">
+                                <p> Projeto 5</p>
+                                <a href="">More info</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./static/img/portfolio6_image.jpg" alt="Foto Portfolio 6">
+                            <div class="images__text">
+                                <p> Projeto 6</p>
+                                <a href="">More info</a>
+                            </div>
+                        </figure>
+                    </div>
+                </article>
+                <footer>
+                    <a href="#section__contato">
+                        <img src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                    </a>
+                </footer>
+            </section>
+        </div>
+
+        <div class="contact">
+            <section class="section" id="section__contato">
+                <div class="main__title">
+                    <h2>Contato</h2>
+                </div>
+
+                <article class="contact__form">
+                    <form action="/" method="post">
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="4" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </article>
+                <footer class="social__networks">
+                    <a href="https://www.linkedin.com/in/homailsonlopes/" target="_blank" class="social__link">
+                        <img src="./static/img/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Homailson/" target="_blank" class="social__link">
+                        <img src="./static/img/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.facebook.com/homailson.lopespassos" target="_blank" class="social__link">
+                        <img src="./static/img/facebook.png" alt="Facebook">
+                    </a>
+                </footer>
+            </section>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./static/js/togglemenu.js"></script>
+    <script type="text/javascript" src="./static/js/home_text.js"></script>
+    <script type="text/javascript" src="./static/js/highlight.js"></script>
+
+</body>
+
+</html>
