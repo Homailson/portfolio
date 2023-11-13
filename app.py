@@ -13,8 +13,8 @@ def create_app():
     app.config["MAIL_PORT"]=587
     app.config["MAIL_USE_TLS"]=True
     app.config["MAIL_USE_SSL"]=False
-    app.config["MAIL_USERNAME"]=os.environ.get("EMAIL")
-    app.config["MAIL_PASSWORD"]=os.environ.get("PASSWORD")
+    app.config["MAIL_USERNAME"]=os.getenv("EMAIL")
+    app.config["MAIL_PASSWORD"]=os.getenv("PASSWORD")
 
     mail = Mail(app)
 
