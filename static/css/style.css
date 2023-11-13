@@ -414,6 +414,7 @@ nav ul li a:hover {
     }
 
     .about section article {
+        margin-right: 5%;
         display: block;
     }
 
