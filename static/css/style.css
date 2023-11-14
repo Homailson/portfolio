@@ -386,12 +386,17 @@ nav ul li a:hover {
     .icon {
         display: block;
         color: black;
+        font-size: 2rem;
     }
 
     nav {
         width: 100%;
         height: auto;
         z-index: 2;
+    }
+
+    nav ul {
+        margin: 0;
     }
 
     /* Esta classe é importante para a função toggle */
@@ -407,6 +412,10 @@ nav ul li a:hover {
 
     .navbar__info {
         display: none;
+    }
+
+    .content section .main__title {
+        margin-top: 10%;
     }
 
     .content section footer {
