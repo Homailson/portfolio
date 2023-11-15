@@ -373,14 +373,17 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 540px) {
-
-    .content section .main__title {
-        font-size: 1.5rem;
-    }
-
     .content {
         width: 100%;
         margin-left: 0;
+    }
+
+    .content section {
+        padding: 5%;
+    }
+
+    .content section .main__title {
+        font-size: 1.5rem;
     }
 
     .icon {
