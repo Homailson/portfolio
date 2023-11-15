@@ -27,14 +27,13 @@ function getCurrentSection() {
     for (var i = sections.length - 1; i >= 0; i--) {
         var section = sections[i];
         var sectionTop = section.offsetTop;
-
-        if (scrollPosition >= sectionTop) {
+        var sectionHeight = section.offsetHeight;
+        if (scrollPosition >= sectionTop - sectionHeight / 2) {
             return section;
         }
     }
 
     return null;
 }
-
 
 document.addEventListener('scroll', highlightCurrentSection);
