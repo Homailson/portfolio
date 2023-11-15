@@ -109,9 +109,10 @@ nav ul li a:hover {
 }
 
 /* Classe adicionada pelo JS highlight.js*/
-.nav__hidden a.active {
+.navbar__item.highlighted {
     color: #2596be;
 }
+
 /* Fim da Classe adicionada pelo JS highlight.js */
 
 /* End of Navbar */
